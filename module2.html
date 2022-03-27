@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .grid-container {
+            display: inline-grid;
+            /* grid row-gap using*/
+            gap: 50px;
+            grid-template-columns: auto auto auto;
+            /* grid-template-rows: 20px auto 200px*/
+            background-color: #2196F3;
+            /* justify-content: center; */
+            padding: 10px;
+        }
+
+        .grid-item {
+            background-color: rgba(255, 255, 255, 0.8);
+            border: 1px solid rgba(0, 0, 0, 0.8);
+            padding: 20px;
+            font-size: 30px;
+            text-align: center;
+        }
+
+        @media only screen and (min-width: 992px) {
+            .grid-container {
+                display: inline-grid;
+                /* grid row-gap using*/
+                /* gap: 50px; */
+                grid-template-columns: auto auto auto;
+                /* grid-template-rows: 20px auto 200px*/
+                background-color: #2196F3;
+                /* justify-content: center; */
+                padding: 10px;
+            }
+
+            .last-item {
+                background-color: rgba(255, 255, 255, 0.8);
+                border: 1px solid rgba(0, 0, 0, 0.8);
+                padding: 20px;
+                font-size: 30px;
+                text-align: center;
+                grid-column: auto;
+            }
+        }
+
+        @media only screen and (max-width:991px) {
+            .grid-container {
+                display: grid;
+                /* grid row-gap using*/
+                /* gap: 50px; */
+                grid-template-columns: auto auto;
+                /* grid-template-rows: 20px auto 200px*/
+
+                background-color: #2196F3;
+                /* justify-content: center; */
+                padding: 10px;
+            }
+
+            .last-item {
+                background-color: rgba(255, 255, 255, 0.8);
+                border: 1px solid rgba(0, 0, 0, 0.8);
+                padding: 20px;
+                font-size: 30px;
+                text-align: center;
+                grid-column: span 2/2;
+
+            }
+        }
+
+        @media only screen and (max-width:767px) {
+            .grid-container {
+                display: inline-grid;
+                /* grid row-gap using*/
+                /* gap: 50px; */
+                grid-template-columns: auto;
+                /* grid-template-rows: 20px auto 200px*/
+                background-color: #2196F3;
+                /* justify-content: center; */
+                padding: 10px;
+            }
+
+            .last-item {
+                background-color: rgba(255, 255, 255, 0.8);
+                border: 1px solid rgba(0, 0, 0, 0.8);
+                padding: 20px;
+                font-size: 30px;
+                text-align: center;
+                grid-column: auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="grid-container">
+        <div class="grid-item">
+           <div  class="grid-item" style="background-color: bisque;" <h2 >chicken... </h2></div>
+            The chicken (Gallus domesticus) is a domesticated bird, with attributes of wild species such as the red and
+            grey junglefowl[1] that are originally from Southeastern Asia. Rooster or cock is a term for an adult male
+            bird, and a younger male may be called a cockerel. A male that has been castrated is a capon. An adult
+            female bird is called a hen and a sexually immature female is called a pullet.
+        </div>
+        <div class="grid-item">
+            <div  class="grid-item" style="background-color:bisque ;" <h2>beef...</h2> </div>
+            Beef is the culinary name for meat from cattle (Bos taurus).
+
+            In prehistoric times, humans hunted aurochs and later domesticated them. Since that time, numerous breeds of
+            cattle have been bred specifically for the quality or quantity of their meat. Today, beef is the third most
+            widely consumed meat in the world, after pork and poultry. As of 2018, the United States, Brazil, and China
+            were the largest producers of beef.
+        </div>
+        <div class="grid-item last-item">
+            <div  class="grid-item" style=" background-color:bisque;"<h2 >chicken... </h2></div>
+            
+            Sushi  pronounced is a Japanese dish of prepared vinegared rice 
+            sushi-meshi), usually with some sugar and salt, accompanied by a variety of ingredients ( neta), such as
+            seafood, often raw, and vegetables. Styles of sushi and its presentation vary widely, but the one key
+            ingredient is "sushi rice", also referred to as shari , or sumeshi
+
+        </div>
+    </div>
+</body>
+
+</html>
